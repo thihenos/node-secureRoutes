@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Thiago Silva">
+
+    <title>App test</title>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/signin.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JQuery core -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="text-center">         
+			<div class="row"><br></div>
+
+			<main role="main" class="container">
+		      <div class="jumbotron">
+		        <h1><p><strong>Welcome to the secured route!</strong></p></h1>
+		      </div>
+		    </main>
+         
+            <p class="mt-5 mb-3 text-muted">&copy; 2018 - @thihenos</p>
+        </div>
+    </div>
+
+	<script type="text/javascript" src="/js/bootstrap.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Node App - Route secure passport">
+    <meta name="author" content="Thiago Silva">
+
+    <title>App test</title>
+
+    <!-- Bootswatch <link rel="stylesheet" href="/css/style.css"> -->
+    
+    <!-- Custom styles for this template -->
+    <link href="/css/signin.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JQuery core -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="row">
+        
+        <div class="jumbotron">
+            <p>
+                This is a simple of securyting route with NodeJS + Passport.js <br>
+                Read the server/routes.js file to understand how Passport.js creates a secure function to validate your session
+            </p>
+            <p><a href="/homeNoSecure/">No Secure Routes ( You can access without login into the app )</a></p>
+            <p><a href="/home/">Home Secure</a></p>
+            <hr class="my-4">
+            <p>If you read the app.js, you will see that each time you run the application, it will insert <strong>ADM</strong> user in the database you configured in <em>server/models/index.js.</em></p>
+
+            <div class="text-center">
+                {#message}
+                    <div class="alert alert-dismissible alert-danger">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        {message} 
+                    </div>
+                {/message}
+                <form method="post" action="/auth/login" class="form-signin">
+                    <input id="inputEmail" name="login" class="form-control" placeholder="username" autofocus required>
+                    </br>
+                    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="password" required>
+                    </br>
+                    <div class="wrapper">
+                      <span class="group-btn">     
+                        <button class="btn btn-primary" style="margin-bottom: 10;" type="submit">Login</button>&nbsp
+                      </span>
+                    </div>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2018 - @thihenos</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+ <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
