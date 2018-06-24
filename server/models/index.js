@@ -13,9 +13,7 @@ const Sequelize = require("sequelize");
  npm install --save tedious
  */
 
-//const sequelize = new Sequelize('URI_DATABASE_CREDENTIALS',{native: true});
-//var sequelize = new Sequelize('postgres://hmrcrtjbehstbh:0f920f70bfb63f1277905dc4a6196fa956212d441242ebb2a5ae8d5e64ab0036@ec2-50-19-224-165.compute-1.amazonaws.com:5432/d1qgvqegt68u3u',{native: true});
-const sequelize = new Sequelize('postgres://hmrcrtjbehstbh:0f920f70bfb63f1277905dc4a6196fa956212d441242ebb2a5ae8d5e64ab0036@ec2-50-19-224-165.compute-1.amazonaws.com:5432/d1qgvqegt68u3u',{native: true});
+const sequelize = new Sequelize('URI_DATABASE_CREDENTIALS',{native: true});
 
 const db = {};
 
